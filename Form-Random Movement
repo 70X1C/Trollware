@@ -1,0 +1,13 @@
+///Simple code It creates two random objects, 
+///grabs the window length - 100,
+///generates a random number between size of the window, 
+///and then draws to the location.
+///Created by: 70X1C
+
+Random random1 = new Random();
+Random random2 = new Random();
+int num1 = (System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width - 100);
+int num2 = (System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height - 100);
+int num3 = random1.Next(0, num1);
+int num4 = random2.Next(0, num2);
+base.Location = new System.Drawing.Point(num3, num4);
